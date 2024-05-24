@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="side-image-container">
+        <div class="side-image-text"><h1>Be Humble</h1></div>
+        <img class="side-image" src="kyle-johnson-Aq7id0ZjEW4-unsplash.jpg" alt="">
+        
+    </div>
+    <form class="my-form">
+        <div class="text-area-container">It can certainly be difficult to remain humble when you're surrounded by people boasting and competing to be the best,
+            We'll walk you through what it means to be humble, and we'll provide lots of examples of what true humble looks like.
+        </div>
+        <div class="inputs-container">
+            <div class="text-area">Let's do this!</div>
+            <fieldset>
+               
+                <div>
+                     <legend>First Name</legend>
+                     <label for="first_name"></label>
+                     <input type="text" id="first_name" name="first-name" required>
+                </div>
+                <div>
+                     <legend>Last Name</legend>
+                     <label for="last_name"></label>
+                     <input type="text" id="last_name" name="last_name" required>
+                </div>
+            </fieldset>
+             <fieldset>
+                <div>
+                    <legend>Email</legend>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" >
+                </div>
+                <div>
+                <legend>Phone Number</legend>
+                <label for="phone_number"></label>
+                <input type="text" id="phone_number" name="phone_number" pattern="^[^0-9]+$">
+                </div>
+            </fieldset>
+             <fieldset>
+                <div>
+                   <legend>Passowrd</legend>
+                   <label for="password"></label>
+                   <input type="password" name="password" id="password" required>
+                   <p class="para"></p>
+                </div>
+                <div>
+                    <legend>Confirm Password</legend>
+                    <label for="confirm-password"></label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+            </fieldset>
+            
+        </div>
+        <div class="submit-container">
+            <button type="submit">Create Account</button>
+            <p>Already have an account ? <a href="">Log in</a></p>
+        </div>
+    </form>
+</body>
+<script>
+    const password = document.querySelector('#password');
+    const confirmPassword = document.querySelector('#confirm-password');
+    const para = document.querySelector('.para');
+    
+    function checkpassword(){ if(password.value == confirmPassword.value  ){
+        para.textContent = ''
+         
+    }
+    else{
+            para.textContent = "Passwords do not match";
+            
+            
+         }
+}
+
+confirmPassword.addEventListener('input',checkpassword);
+checkpassword()
+
+</script>
+</html>

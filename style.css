@@ -1,0 +1,137 @@
+
+body{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    font: .9rem sans-serif;
+    
+}
+form{
+    width: 100%;
+    
+    background-color: rgb(242, 242, 243);
+
+}
+.side-image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.side-image{
+    
+    width: 500px;
+    height: 737px;
+    
+    
+}
+.side-image-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:500px;
+    height: 20vh;
+    position: absolute;
+    color: white;
+    background-color: rgb(0, 0, 8);
+    opacity: 40%;
+}
+
+
+.text-area{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+} 
+.text-area-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    font-weight:  bold;
+    font-size: 1.2rem;
+   
+}
+.inputs-container{
+    border: 1px ;
+    box-shadow: 5px 5px 5px  rgb(188, 183, 183);
+    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-left: 40px;
+    background-color: white;
+   
+   
+}
+fieldset{
+   text-transform: uppercase;
+    border: none;
+    display: flex;
+    gap: 50px;
+   
+   
+    
+    
+}
+.submit-container{
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 40px;
+    height: 105px;
+}
+.submit-container button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+.submit-container a{
+    text-decoration: none;
+    color: #596D48;
+}
+.submit-container a:hover{color: #1f2e12;}
+button:hover{background-color: #1f2e12;}
+input{
+    border:3px solid #d8d8d8;
+     border-radius: 3px;
+}
+
+/* button, input, optgroup, select, textarea {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    background: transparent;
+} */
+input:focus:invalid{
+    outline: none;
+    border:2px solid red;
+}
+/* input:invalid{
+    border: 2px solid;
+    border-color: red;
+    
+   
+} */
+
+input:valid:focus{
+    outline: none;
+   border: 2px solid;
+    border-color: #8BC34A;
+}
+input:optional:focus{
+    border-color: #d8d8d8;
+}
+
+.para{
+    color: red;
+    font-size: .7rem;
+    font-weight: bold;
+    text-transform: none;
+}
